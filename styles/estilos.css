@@ -1,3 +1,4 @@
+/* El reseteo*/
 * {
     margin: 0;
     box-sizing: border-box;
@@ -8,6 +9,7 @@ img {
     max-width: 100%;
 }
 
+/* General */
 body {
     background-color: #9a0002;
     font-family: 'Quicksand', sans-serif;
@@ -57,6 +59,7 @@ main button {
     width: 280px;
 }
 
+/* Info */
 #info {
     display: flex;
     flex-direction: row;
@@ -72,6 +75,7 @@ main button {
     padding: 0.5rem 2rem;
 }
 
+/* Los discos */
 #discos {
     width: 100%;
     color: black;
@@ -111,6 +115,7 @@ main button {
     border-bottom: 0.1rem solid black;
 }
 
+/* Lista de pistas */
 .carta-disco ul {
     margin: 2rem 0 1rem;
     list-style: none;
@@ -130,7 +135,6 @@ main button {
     font-size: 1rem;
 }
 
-
 .cancion {
     display: flex;
     flex-direction: row;
@@ -147,7 +151,7 @@ main button {
     font-weight: bolder;
 }
 
-
+/* Footer */
 footer {
 
     max-width: 1300px;
@@ -182,7 +186,7 @@ footer ul li a:hover {
     color: #efe6de;
 }
 
-
+/* Adaptación por tamaño de pantalla */
 @media screen and (max-width: 960px) {
 
     #discos {

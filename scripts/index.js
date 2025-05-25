@@ -2,6 +2,8 @@
  * SUBBOTINA, KRISTINA
  */
 
+
+//Cargamos discos de json para testear
 let discos = [];
 fetch("/discos.json")
   .then((response) => response.json())
@@ -18,6 +20,7 @@ fetch("/discos.json")
     );
   });
 
+//Func: buscar el disco más largo  
 function discoLargo() {
   if (discos.length === 0) {
     return null;
@@ -31,6 +34,8 @@ function discoLargo() {
   return maxDisco;
 }
 
+
+//Func: Mostrar info y todos los discos
 function mostrar(discosMostrar, isSearch = false) {
   const divDiscos = document.querySelector("#discos");
   const divInfo = document.querySelector("#info");
@@ -52,6 +57,7 @@ function mostrar(discosMostrar, isSearch = false) {
   }
 }
 
+//Func: cargar un disco nuevo
 function cargar() {
   const idList = discos.map((disco) => disco.id);
 
@@ -71,9 +77,10 @@ function cargar() {
   mostrar(discos);
 }
 
+//Func: buscar el disco por su id
 function buscar() {
   let idBuscar = Disco.pedirId([]);
-  const resultBuscar = discos.filter((disco) => disco.id == idBuscar);
+  const resultBuscar = discos.filter((disco) => disco.id === idBuscar);
   if (resultBuscar.length === 0) {
     alert("Error: No hay discos encontrados");
   }

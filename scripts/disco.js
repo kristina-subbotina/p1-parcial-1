@@ -10,6 +10,7 @@ class Disco {
     this.pistas.forEach((pista) => (this.sumDuracion += pista.duracion));
   }
 
+  //Func: solicitar nombre del disco
   static pedirNombre() {
     let nombre;
     do {
@@ -18,6 +19,7 @@ class Disco {
     return nombre;
   }
 
+  //Func: solicitar artista / banda del disco
   static pedirArtista() {
     let artista;
     do {
@@ -26,6 +28,7 @@ class Disco {
     return artista;
   }
 
+  //Func: solicitar id unico del disco
   static pedirId(idList) {
     let id;
     let idValido = false;
@@ -45,6 +48,7 @@ class Disco {
     return id;
   }
 
+  //Func: solicitar url de la portada del disco
   static pedirPortada() {
     let portada;
     do {
@@ -53,6 +57,7 @@ class Disco {
     return portada;
   }
 
+  //Func: buscar la pista más larga del disco
   pistaLarga() {
     if (this.pistas.length === 0) {
       return null;
@@ -66,6 +71,7 @@ class Disco {
     return maxPista;
   }
 
+  // Formating de datos de duración a formato HH:MM:SS
   static formatDuracion(duracion) {
     let horas = Math.floor(duracion / 3600);
     let minutos = Math.floor((duracion % 3600) / 60);

@@ -4,6 +4,7 @@ class Pista {
     this.duracion = duracion;
   }
 
+  //Func: solicitar nombre de la pista
   static pedirNombre() {
     let nombre;
     do {
@@ -12,6 +13,7 @@ class Pista {
     return nombre;
   }
 
+  //Func: solicitar duración de la pista
   static pedirDuracion() {
     let duracion;
     let isValido = false;
@@ -29,8 +31,7 @@ class Pista {
     return duracion;
   }
 
-
-
+  // Formating de datos de duración a formato MM:SS
   formatDuracion() {
     let minutos = Math.floor(this.duracion / 60);
     let segundos = this.duracion % 60;
@@ -40,8 +41,9 @@ class Pista {
     return `${minutos}:${segundos}`;
   }
 
+  
   toHTML() {
-    let duracionClass = "corta";
+    let duracionClass = "";
     if (this.duracion > 180) {
       duracionClass = "larga";
     }
