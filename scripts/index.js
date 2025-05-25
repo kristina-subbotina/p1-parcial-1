@@ -3,22 +3,22 @@
  */
 
 
-//Cargamos discos de json para testear
-let discos = [];
-fetch("../discos.json")
-  .then((response) => response.json())
-  .then((json) => {
-    discos = json.map(
-      (disco) =>
-        new Disco(
-          disco.nombre,
-          disco.artista,
-          disco.id,
-          disco.portada,
-          disco.pistas.map((pista) => new Pista(pista.nombre, pista.duracion))
-        )
-    );
-  });
+// //Cargamos discos de json para testear
+// let discos = [];
+// fetch("../discos.json")
+//   .then((response) => response.json())
+//   .then((json) => {
+//     discos = json.map(
+//       (disco) =>
+//         new Disco(
+//           disco.nombre,
+//           disco.artista,
+//           disco.id,
+//           disco.portada,
+//           disco.pistas.map((pista) => new Pista(pista.nombre, pista.duracion))
+//         )
+//     );
+//   });
 
 //Func: buscar el disco más largo  
 function discoLargo() {
