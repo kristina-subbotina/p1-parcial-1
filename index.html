@@ -1,41 +1,55 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <!-- Reemplazar por los datos que correspondan -->
-        <title>Programación I | Parcial 1 | APELLIDO, NOMBRE | APELLIDO, NOMBRE</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
-        <link rel="shortcut icon" href="favicon.ico" />
-        <link rel="stylesheet" href="styles/styles.css" />
-    </head>
-    <body>
-        <header>
-            <!-- Reemplazar por los datos que correspondan -->
-            <h1>Programación I | Parcial 1 | APELLIDO, NOMBRE | APELLDIO, NOMBRE</h1>
-        </header>
-        <main>
-            <h2>Mis discos</h2>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Programación I | Parcial 1 | SUBBOTINA, KRISTINA </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles/estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&family=Gowun+Batang:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+DE+Grund:wght@100..400&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Programación I | Parcial 1 | SUBBOTINA, KRISTINA </h1>
+    </header>
+    <main>
+        <h2>Mis discos</h2>
+        <div class="buttones">
             <button onclick="cargar();">Cargar nuevo disco</button>
-            <button onclick="mostrar();">Mostrar discos</button>
-            <div id="discos">
-                <!--
-                    Aca podrian mostrar los discos
-                -->
-            </div>
-            <script src="scripts/index.js"></script>
-        </main>
-        <footer>
-            <ul>
-                <li>Profesor Fabrizio Carlassara</li>
-                <li>
-                    <a href="mailto:fabrizio.carlassara@davinci.edu.ar?subject=P1%20-%20Consulta%20-%20DW2[M|T|N][A|B]%20-%20Apellido,%20Nombre" target="_blank">fabrizio.carlassara@davinci.edu.ar</a>
-                </li>
-                <li>Programación 1</li>
-                <li>
-                    <!-- Reemplazar por el link del repositorio de GitHub -->
-                    <a href="#">URL del repo de GitHub</a>
-                </li>
-            </ul>
-        </footer>
-    </body>
+            <button onclick="mostrar(discos);">Mostrar discos</button>
+            <button onclick="buscar();">Buscar disco</button>
+        </div>
+
+        <div id="info">
+        </div>
+        <div id="discos">
+        </div>
+
+        <script src="scripts/validators.js"></script>
+        <script src="scripts/pistas.js"></script>
+        <script src="scripts/disco.js"></script>
+        <script src="scripts/index.js"></script>
+    </main>
+    <footer>
+        <ul>
+            <li>Profesor Fabrizio Carlassara</li>
+            <li>
+                <a href="mailto:fabrizio.carlassara@davinci.edu.ar?subject=P1%20-%20Consulta%20-%20DW2[M|T|N][A|B]%20-%20Apellido,%20Nombre"
+                    target="_blank">fabrizio.carlassara@davinci.edu.ar</a>
+            </li>
+            <li>Programación 1</li>
+            <li>
+                <!-- Reemplazar por el link del repositorio de GitHub -->
+                <a href="#">URL del repo de GitHub</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
 </html>

@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    background-color: #9a0002;
+    font-family: 'Quicksand', sans-serif;
+}
+
+main {
+    background-color: #efe6de;
+    max-width: 1300px;
+    margin: auto;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+h1 {
+    text-align: center;
+    padding: 2rem;
+    color: #efe6de;
+    font-size: 3rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.buttones {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+
+main button {
+    margin: 2rem auto;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 5px 3px 3px grey;
+    padding: 1rem;
+    background: #9a0002;
+    cursor: pointer;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #efe6de;
+    width: 280px;
+}
+
+#info {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    justify-content: center;
+}
+
+#info>p {
+    border-bottom: #9a0002 solid 0.1rem;
+    border-top: #9a0002 solid 0.1rem;
+    padding: 0.5rem 2rem;
+}
+
+#discos {
+    width: 100%;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+
+.carta-disco {
+    padding: 1rem;
+    background-color: rgba(128, 128, 128, 0.372);
+    border-radius: 0.5rem;
+}
+
+.carta-disco h3 {
+    height: 4rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.carta-disco img {
+    margin: 1rem auto;
+}
+
+.carta-disco p {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    text-align: left;
+    color: black;
+}
+
+.info-disco {
+    height: 260px;
+    border-bottom: 0.1rem solid black;
+}
+
+.carta-disco ul {
+    margin: 2rem 0 1rem;
+    list-style: none;
+    padding-left: 0;
+}
+
+.carta-disco ul li:nth-child(odd) {
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
+.carta-disco li {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.carta-disco li>div {
+    font-size: 1rem;
+}
+
+
+.cancion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.cancion p {
+    font-size: 1.1rem;
+}
+
+.larga p:last-child {
+    font-weight: bolder;
+}
+
+
+footer {
+
+    max-width: 1300px;
+    margin: auto;
+    padding: 1.5rem;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-left: 0;
+    width: 100%;
+    list-style: none;
+}
+
+footer ul li {
+    font-size: 1.4em;
+    line-height: 1.5;
+    color: #efe6de;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #efe6de;
+    font-weight: 700;
+}
+
+footer ul li a:hover {
+    color: #efe6de;
+}
+
+
+@media screen and (max-width: 960px) {
+
+    #discos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    #discos {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+}
