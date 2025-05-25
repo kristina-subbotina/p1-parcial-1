@@ -3,8 +3,10 @@
  */
 
 
+
+let discos = [];
+
 // //Cargamos discos de json para testear
-// let discos = [];
 // fetch("../discos.json")
 //   .then((response) => response.json())
 //   .then((json) => {
